@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    >
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/myaccount"
+            android:icon="@drawable/account"
+            android:title="My Account" />
+        <item
+            android:id="@+id/courses"
+            android:icon="@drawable/courses"
+            android:title="Courses" />
+        <item
+            android:id="@+id/schedule"
+            android:icon="@drawable/schedule"
+            android:title="Schedule" />
+        <item
+            android:id="@+id/results"
+            android:icon="@drawable/result"
+            android:title="Grade" />
+        <item
+            android:id="@+id/about"
+            android:icon="@drawable/about"
+            android:title="About Fci" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+            <item
+                android:id="@+id/log"
+                android:icon="@drawable/logout"
+                android:title="Log Out" />
+        </menu>
+    </item>
+
+</menu>

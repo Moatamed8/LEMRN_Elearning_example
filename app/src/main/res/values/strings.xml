@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">LEMRN</string>
+    <string name="welcom_to_student_guide">Welcom to Student Guide</string>
+    <string name="need_a_new_account">Need A New Account</string>
+    <string name="already_have_account">Already have Account</string>
+    <string name="display_name">Display name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="create_account">Create Account</string>
+    <string name="create_a_new_account">Create a New Account</string>
+    <string name="login_to_your_account">Login to your account</string>
+    <string name="login">Login</string>
+    <string name="title_activity_student">StudentActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="save_change">Save Change</string>
+    <string name="your_status">Your Status</string>
+    <string name="first_grade">First Grade</string>
+    <string name="changer_image">Change Image</string>
+    <string name="change_stauts">Change Stauts</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="reset">Reset</string>
+    <string name="fci_message">Preparation of cadres specialized in the
+    field of computer science and information
+    systems are qualified and equipped with
+    theoretical and applicable foundations
+    and able to provide scientific advice and
+    technical assistance to different parties</string>
+
+    <string-array name="fragments">
+        <item>Information Technology</item>
+        <item>Decision Support</item>
+        <item>Information System</item>
+        <item>Computer Science</item>
+    </string-array>
+</resources>

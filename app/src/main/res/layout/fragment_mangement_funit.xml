@@ -1,0 +1,1228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MangementFUnit">
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="7dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="Unit1:"
+                    android:textSize="25sp"
+                    />
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Course Materials"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20sp" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="objective"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+
+
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp"
+                >
+
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/unit1"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Lec 1.pdf"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Download File"
+                        android:onClick="DownloadAlgBtnv"
+
+                        android:clickable="true"
+                        android:textStyle="bold"
+                        android:layout_marginTop="5dp"
+
+
+                        />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/sheet" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:text="sheet1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:clickable="true"
+                        android:text="DownLoad Sheet"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="310dp"
+                android:layout_marginTop="10dp">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:padding="1.1dp"
+                    android:background="@drawable/border"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:background="#fff"
+                        android:padding="35dp"
+                        >
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            >
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:background="#edecec"
+                                android:orientation="horizontal"
+                                >
+                                <Button
+                                    android:layout_width="wrap_content"
+
+                                    android:layout_height="23dp"
+
+                                    android:layout_gravity="center"
+
+                                    android:layout_marginLeft="15dp"
+
+                                    android:background="@drawable/buttonshape"
+
+                                    android:text="Choose File"
+                                    android:onClick="BtnAlgoChose"
+
+                                    android:textSize="17sp"
+                                    />
+                                <TextView
+                                    android:id="@+id/algorithmtxt1"
+                                    android:layout_width="wrap_content"
+
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_gravity="center"
+
+                                    android:layout_marginLeft="15dp"
+
+                                    android:hint=" no file selected "/>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="150dp"
+                            android:layout_height="35dp"
+                            android:background="@drawable/buttonshape"
+                            android:layout_marginTop="15dp">
+                            <Button
+                                android:background="@drawable/buttonshape"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Upload Sheet"
+                                android:onClick="BtnUploadAlgov"
+                                android:id="@+id/algorithmb1"
+                                android:padding="0.5dp"
+                                android:textSize="19sp"
+                                /></LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Deadline"
+                            android:textSize="20sp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="20dp"
+                            android:textColor="#000"
+                            android:textStyle="bold"/>
+                        <LinearLayout
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/border"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="20dp">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="#ffff"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:id="@+id/clouddead1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=""
+                                    android:hint="Time out"
+                                    android:textSize="20sp"
+                                    android:textColor="#000"
+                                    android:textStyle="bold"/>
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="29dp"
+                    android:layout_marginTop="1dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#fff"
+                        android:padding="5dp"
+                        android:text="Upload Sheet"
+                        android:textColor="#000"
+                        android:textSize="20sp"
+                        />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="9dp">
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="Unit2:"
+                    android:textSize="25sp"
+                    />
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Course Materials"
+                    android:textColor="@color/colorAccent"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="20sp" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="objective"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+
+
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp"
+                >
+
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/unit1"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Lec 2.pdf"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Download File"
+                        android:textStyle="bold"
+                        android:layout_marginTop="5dp"
+                        android:onClick="DownloadAlgBtniv"
+
+
+                        />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/sheet" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:text="sheet2" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:clickable="true"
+                        android:text="DownLoad Sheet"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="310dp"
+                android:layout_marginTop="10dp">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:padding="1.1dp"
+                    android:background="@drawable/border"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:background="#fff"
+                        android:padding="35dp"
+                        >
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            >
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:background="#edecec"
+                                android:orientation="horizontal"
+                                >
+                                <Button
+                                    android:layout_width="wrap_content"
+
+                                    android:layout_height="23dp"
+
+                                    android:layout_gravity="center"
+
+                                    android:layout_marginLeft="15dp"
+
+                                    android:background="@drawable/buttonshape"
+
+                                    android:text="Choose File"
+                                    android:onClick="BtnAlgoChose"
+
+
+                                    android:textSize="17sp"
+                                    />
+                                <TextView
+                                    android:id="@+id/algorithmtxt2"
+                                    android:layout_width="wrap_content"
+
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_gravity="center"
+
+                                    android:layout_marginLeft="15dp"
+
+                                    android:hint=" no file selected "/>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="150dp"
+                            android:layout_height="35dp"
+                            android:background="@drawable/buttonshape"
+                            android:layout_marginTop="15dp">
+                            <Button
+                                android:background="@drawable/buttonshape"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Upload Sheet"
+                                android:id="@+id/algorithmb2"
+
+                                android:onClick="BtnUploadAlgoiv"
+                                android:padding="0.5dp"
+                                android:textSize="19sp"
+                                /></LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Deadline"
+                            android:textSize="20sp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="20dp"
+                            android:textColor="#000"
+                            android:textStyle="bold"/>
+                        <LinearLayout
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/border"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="20dp">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="#ffff"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:id="@+id/clouddead2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=""
+                                    android:hint="Time out"
+                                    android:textSize="20sp"
+                                    android:textColor="#000"
+                                    android:textStyle="bold"/>
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="29dp"
+                    android:layout_marginTop="1dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#fff"
+                        android:padding="5dp"
+                        android:text="Upload Sheet"
+                        android:textColor="#000"
+                        android:textSize="20sp"
+                        />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="Unit3:"
+                    android:textSize="25sp"
+                    />
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Course Materials"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20sp" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="objective"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+
+
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp"
+                >
+
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/unit1"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Lec 3.pdf"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Download File"
+                        android:onClick="DownloadAlgBtniii"
+                        android:textStyle="bold"
+                        android:layout_marginTop="5dp"
+
+
+                        />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/sheet" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:text="sheet3" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:clickable="true"
+                        android:text="DownLoad Sheet"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="310dp"
+                android:layout_marginTop="10dp">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:padding="1.1dp"
+                    android:background="@drawable/border"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:background="#fff"
+                        android:padding="35dp"
+                        >
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            >
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:background="#edecec"
+                                android:orientation="horizontal"
+                                >
+                                <Button
+                                    android:layout_width="wrap_content"
+
+                                    android:layout_height="23dp"
+
+                                    android:layout_gravity="center"
+
+                                    android:layout_marginLeft="15dp"
+
+                                    android:background="@drawable/buttonshape"
+                                    android:onClick="BtnAlgoChose"
+                                    android:text="Choose File"
+
+                                    android:textSize="17sp"
+                                    />
+                                <TextView
+                                    android:id="@+id/algorithmtxt3"
+                                    android:layout_width="wrap_content"
+
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_gravity="center"
+
+                                    android:layout_marginLeft="15dp"
+
+                                    android:hint=" no file selected "/>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="150dp"
+                            android:layout_height="35dp"
+                            android:background="@drawable/buttonshape"
+                            android:layout_marginTop="15dp">
+                            <Button
+                                android:background="@drawable/buttonshape"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Upload Sheet"
+                                android:id="@+id/algorithmb3"
+
+                                android:onClick="BtnUploadAlgoiii"
+                                android:padding="0.5dp"
+                                android:textSize="19sp"
+                                /></LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Deadline"
+                            android:textSize="20sp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="20dp"
+                            android:textColor="#000"
+                            android:textStyle="bold"/>
+                        <LinearLayout
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/border"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="20dp">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="#ffff"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:id="@+id/clouddead3"
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=""
+                                    android:hint="Time out"
+                                    android:textSize="20sp"
+                                    android:textColor="#000"
+                                    android:textStyle="bold"/>
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="29dp"
+                    android:layout_marginTop="1dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#fff"
+                        android:padding="5dp"
+                        android:text="Upload Sheet"
+                        android:textColor="#000"
+                        android:textSize="20sp"
+                        />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="Unit4:"
+                    android:textSize="25sp"
+                    />
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Course Materials"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20sp" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="objective"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+
+
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp"
+                >
+
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/unit1"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="lec 4.pdf"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Download File"
+                        android:textStyle="bold"
+                        android:onClick="DownloadAlgBtnii"
+
+                        android:layout_marginTop="5dp"
+
+
+                        />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/sheet" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:text="sheet4" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:clickable="true"
+                        android:text="DownLoad Sheet"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="310dp"
+                android:layout_marginTop="10dp">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:padding="1.1dp"
+                    android:background="@drawable/border"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:background="#fff"
+                        android:padding="35dp"
+                        >
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            >
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:background="#edecec"
+                                android:orientation="horizontal"
+                                >
+                                <Button
+                                    android:layout_width="wrap_content"
+
+                                    android:layout_height="23dp"
+
+                                    android:layout_gravity="center"
+
+                                    android:layout_marginLeft="15dp"
+
+                                    android:background="@drawable/buttonshape"
+
+                                    android:text="Choose File"
+                                    android:onClick="BtnAlgoChose"
+
+                                    android:textSize="17sp"
+                                    />
+                                <TextView
+                                    android:id="@+id/algorithmtxt4"
+                                    android:layout_width="wrap_content"
+
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_gravity="center"
+
+                                    android:layout_marginLeft="15dp"
+
+                                    android:hint=" no file selected "/>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="150dp"
+                            android:layout_height="35dp"
+                            android:background="@drawable/buttonshape"
+                            android:layout_marginTop="15dp">
+                            <Button
+                                android:background="@drawable/buttonshape"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Upload Sheet"
+                                android:id="@+id/algorithmb4"
+
+                                android:onClick="BtnUploadAlgoii"
+                                android:padding="0.5dp"
+                                android:textSize="19sp"
+                                /></LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Deadline"
+                            android:textSize="20sp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="20dp"
+                            android:textColor="#000"
+                            android:textStyle="bold"/>
+                        <LinearLayout
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/border"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="20dp">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="#ffff"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:id="@+id/clouddead4"
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=""
+                                    android:hint="Time out"
+                                    android:textSize="20sp"
+                                    android:textColor="#000"
+                                    android:textStyle="bold"/>
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="29dp"
+                    android:layout_marginTop="1dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#fff"
+                        android:padding="5dp"
+                        android:text="Upload Sheet"
+                        android:textColor="#000"
+                        android:textSize="20sp"
+                        />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="Unit5:"
+                    android:textSize="25sp"
+                    />
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Course Materials"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20sp" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="objective"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+
+
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp"
+                >
+
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/unit1"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="lec 5.pdf"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Download File"
+                        android:textStyle="bold"
+                        android:onClick="DownloadAlgBtni"
+
+                        android:layout_marginTop="5dp"
+
+
+                        />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="5dp">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/sheet" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:text="sheet5" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:clickable="true"
+                        android:text="DownLoad Sheet"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="310dp"
+                android:layout_marginTop="10dp">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:padding="1.1dp"
+                    android:background="@drawable/border"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:background="#fff"
+                        android:padding="35dp"
+                        >
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            >
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:background="#edecec"
+                                android:orientation="horizontal"
+                                >
+                                <Button
+                                    android:layout_width="wrap_content"
+
+                                    android:layout_height="23dp"
+
+                                    android:layout_gravity="center"
+
+                                    android:layout_marginLeft="15dp"
+
+                                    android:background="@drawable/buttonshape"
+
+                                    android:text="Choose File"
+
+                                    android:textSize="17sp"
+                                    android:onClick="BtnAlgoChose"
+                                    />
+                                <TextView
+                                    android:id="@+id/algorithmtxt5"
+                                    android:layout_width="wrap_content"
+
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_gravity="center"
+
+                                    android:layout_marginLeft="15dp"
+
+                                    android:hint=" no file selected "/>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="150dp"
+                            android:layout_height="35dp"
+                            android:background="@drawable/buttonshape"
+                            android:layout_marginTop="15dp">
+                            <Button
+                                android:background="@drawable/buttonshape"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Upload Sheet"
+                                android:id="@+id/algorithmb5"
+
+                                android:padding="0.5dp"
+                                android:onClick="BtnUploadAlgoi"
+                                android:textSize="19sp"
+                                /></LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Deadline"
+                            android:textSize="20sp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="20dp"
+                            android:textColor="#000"
+                            android:textStyle="bold"/>
+                        <LinearLayout
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/border"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="20dp">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="#ffff"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:id="@+id/clouddead5"
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=""
+                                    android:hint="Time out"
+                                    android:textSize="20sp"
+                                    android:textColor="#000"
+                                    android:textStyle="bold"/>
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="29dp"
+                    android:layout_marginTop="1dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#fff"
+                        android:padding="5dp"
+                        android:text="Upload Sheet"
+                        android:textColor="#000"
+                        android:textSize="20sp"
+                        />
+                </LinearLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+
+
+</FrameLayout>
